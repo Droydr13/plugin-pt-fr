@@ -1,0 +1,343 @@
+{
+  "name": "All-in-One FR-PT",
+  "version": "1.1.0",
+  "scrapers": [
+    {
+      "id": "anizone",
+      "name": "AniZone",
+      "description": "AniZone filtrado: solo anime multi-audio con francés o portugués.",
+      "version": "1.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/anizone.js",
+      "enabled": true,
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://anizone.to/favicon.ico",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "anidb",
+      "name": "AniDB",
+      "description": "AniDB filtrado: solo doblajes en francés y portugués.",
+      "version": "1.1.0",
+      "author": "Nuvio Team (ChillPill)",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/anidb.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/rmMzZ45K/anidb.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "anime-sama",
+      "name": "Anime-Sama",
+      "description": "Anime en francés (VF) y en versión original con subtítulos en francés (VOSTFR).",
+      "version": "1.2.0",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/anime-sama.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "logo": "https://i.postimg.cc/tgYt2pYG/animesama.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "animezey",
+      "name": "AnimeZeY",
+      "description": "Películas, series y anime en portugués de Brasil.",
+      "version": "1.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animezey.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "mkv",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/RVTy2djk/ainimezey.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "castle",
+      "name": "Castle",
+      "description": "Castle filtrado: solo pistas en francés y portugués.",
+      "version": "2.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/castle.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/0NvGzFyK/castle.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "goated",
+      "name": "Goated",
+      "description": "Goated filtrado: solo videos multi-audio con francés o portugués.",
+      "version": "1.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/goated.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mkv",
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/qqsfgS0F/goated.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "moviebox",
+      "name": "MovieBox",
+      "description": "MovieBox filtrado: solo doblajes en francés y portugués.",
+      "version": "1.3.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/moviebox.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mpd"
+      ],
+      "logo": "https://moviebox.ph/favicon.ico",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "movix",
+      "name": "Movix",
+      "description": "Películas y series en francés (VF), VOSTFR y audio dual francés-inglés.",
+      "version": "1.1.0",
+      "author": "wooodyhood",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/movix.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/XYrPQm87/movix.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "nakios",
+      "name": "Nakios",
+      "description": "Películas y series en francés (VF, VOSTFR y MULTI).",
+      "version": "3.9.0",
+      "author": "Wooodyhood",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/nakios.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/nLwY1pJB/nakios.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "netmirror",
+      "name": "NetMirror",
+      "description": "NetMirror (Netflix, Prime y más) filtrado: solo videos con audio en francés o portugués.",
+      "version": "1.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/netmirror.js",
+      "enabled": true,
+      "hasSettings": true,
+      "logo": "https://net22.cc/favicon.ico",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ],
+      "supportsExternalPlayer": false
+    },
+    {
+      "id": "peachify",
+      "name": "Peachify",
+      "description": "Peachify filtrado: solo fuentes en francés y portugués.",
+      "version": "1.1.0",
+      "author": "piratezoro9",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/peachify.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "logo": "https://i.postimg.cc/tCz8CDH3/peachify.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "purstream",
+      "name": "Purstream",
+      "description": "Películas y series en francés (VF, VOSTFR y audio dual).",
+      "version": "3.1.0",
+      "author": "wooodyhood",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/purstream.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/7L5shxmC/purstream.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "torrentio",
+      "name": "Torrentio",
+      "description": "Torrentio filtrado: solo torrents en francés o portugués. Admite servicios debrid.",
+      "version": "1.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/torrentio.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/ZRYTCy0T/torrentio.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
+      "id": "videasy",
+      "name": "VidEasy",
+      "description": "VidEasy filtrado: SuperFlix en portugués de Brasil y fuentes multi-audio con francés o portugués.",
+      "version": "1.1.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/videasy.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/7LHYMtVV/videasy.png",
+      "contentLanguage": [
+        "pt",
+        "fr"
+      ]
+    },
+    {
+      "id": "vidlove",
+      "name": "VidLove",
+      "description": "VidLove filtrado: solo videos multi-audio con francés o portugués.",
+      "version": "1.1.0",
+      "author": "Jeff",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/vidlove.js",
+      "enabled": true,
+      "hasSettings": false,
+      "formats": [
+        "mp4",
+        "m3u8",
+        "mkv"
+      ],
+      "logo": "https://i.postimg.cc/ZRjQytBY/vidlove.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    }
+  ]
+}
