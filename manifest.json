@@ -1,6 +1,6 @@
 {
   "name": "All-in-One FR-PT",
-  "version": "1.1.1",
+  "version": "1.4.0",
   "scrapers": [
     {
       "id": "anizone",
@@ -49,8 +49,8 @@
     {
       "id": "anime-sama",
       "name": "Anime-Sama",
-      "description": "Anime en francés (VF) y en versión original con subtítulos en francés (VOSTFR).",
-      "version": "1.2.0",
+      "description": "Anime en francés (VF) y VOSTFR desde Anime-Sama, uno de los catálogos franceses más grandes y con estrenos del día.",
+      "version": "1.3.0",
       "author": "Gowaru",
       "supportedTypes": [
         "movie",
@@ -58,7 +58,6 @@
       ],
       "filename": "providers/anime-sama.js",
       "enabled": true,
-      "hasSettings": true,
       "formats": [
         "mp4",
         "mkv"
@@ -163,9 +162,9 @@
     {
       "id": "movix",
       "name": "Movix",
-      "description": "Películas y series en francés (VF), VOSTFR y audio dual francés-inglés.",
-      "version": "1.1.0",
-      "author": "wooodyhood",
+      "description": "Películas, series y anime en francés (VF) y VOSTFR desde Movix. Usa la API nueva de Movix (fstream, wiflix, j1f y cpasmal, con búsqueda por título de respaldo) y, si no encuentra nada, el método anterior.",
+      "version": "1.2.0",
+      "author": "Gowaru, wooodyhood",
       "supportedTypes": [
         "movie",
         "tv"
@@ -175,19 +174,21 @@
       "hasSettings": true,
       "formats": [
         "mp4",
+        "mkv",
         "m3u8"
       ],
       "logo": "https://i.postimg.cc/XYrPQm87/movix.png",
       "contentLanguage": [
         "fr"
-      ]
+      ],
+      "supportsExternalPlayer": true
     },
     {
       "id": "nakios",
       "name": "Nakios",
-      "description": "Películas y series en francés (VF, VOSTFR y MULTI).",
-      "version": "3.9.0",
-      "author": "Wooodyhood",
+      "description": "Películas y series en francés (VF, VOSTFR y MULTI) desde Nakios. Usa el método de Gowaru y, si no encuentra nada, el método anterior.",
+      "version": "3.10.0",
+      "author": "Gowaru, Wooodyhood",
       "supportedTypes": [
         "movie",
         "tv"
@@ -196,8 +197,7 @@
       "enabled": true,
       "hasSettings": true,
       "formats": [
-        "mp4",
-        "m3u8"
+        "mp4"
       ],
       "logo": "https://i.postimg.cc/nLwY1pJB/nakios.png",
       "contentLanguage": [
@@ -270,10 +270,33 @@
       ]
     },
     {
+      "id": "vidlink",
+      "name": "VidLink",
+      "description": "VidLink filtrado: solo videos con audio en francés o portugués (pistas multi-audio o títulos originales en esos idiomas).",
+      "version": "1.2.0",
+      "author": "Nuvio Team",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/vidlink.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.postimg.cc/RZRHQd75/vidlink.png",
+      "contentLanguage": [
+        "fr",
+        "pt"
+      ]
+    },
+    {
       "id": "videasy",
       "name": "VidEasy",
-      "description": "VidEasy filtrado: SuperFlix en portugués de Brasil y fuentes multi-audio con francés o portugués.",
-      "version": "1.1.0",
+      "description": "VidEasy filtrado: servidores en francés (Meine) y portugués de Brasil (SuperFlix, OverFlix, VisionCine), fuentes multi-audio y títulos originales en esos idiomas.",
+      "version": "1.3.0",
       "author": "Nuvio Team",
       "supportedTypes": [
         "movie",
@@ -288,8 +311,8 @@
       ],
       "logo": "https://i.postimg.cc/7LHYMtVV/videasy.png",
       "contentLanguage": [
-        "pt",
-        "fr"
+        "fr",
+        "pt"
       ]
     },
     {
@@ -314,6 +337,726 @@
       "contentLanguage": [
         "fr",
         "pt"
+      ]
+    },
+    {
+      "id": "anime-ultime",
+      "name": "Anime-Ultime",
+      "description": "Anime en francés (VF) y VOSTFR desde Anime-Ultime.",
+      "version": "0.0.3",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/anime-ultime.js",
+      "enabled": true,
+      "formats": [
+        "mp4"
+      ],
+      "logo": "https://v5.anime-ultime.net/static/favicon/android-icon-192x192.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "animesama-co",
+      "name": "AnimeSama.co",
+      "description": "Anime en francés (VF) y VOSTFR desde AnimeSama.co (espejo).",
+      "version": "1.0.12",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animesama-co.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://raw.githubusercontent.com/Anime-Sama/IMG/img/autres/logo.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "animesultra",
+      "name": "AnimesUltra",
+      "description": "Anime en francés (VF) y VOSTFR desde AnimesUltra.",
+      "version": "1.0.37",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animesultra.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "logo": "https://animesultra.org/templates/animeultra/images/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "animevostfr",
+      "name": "AnimeVOSTFR",
+      "description": "Anime en francés (VF) y VOSTFR desde AnimeVOSTFR.",
+      "version": "1.1.52",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animevostfr.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "logo": "https://animevostfr.org/wp-content/uploads/luffy-icon.jpg",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "animoflix",
+      "name": "AnimoFlix",
+      "description": "Anime en francés (VF) y VOSTFR desde AnimoFlix.",
+      "version": "1.0.17",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animoflix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "logo": "https://animoflix.to/img/logo.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "coflix",
+      "name": "Coflix",
+      "description": "Películas y series en francés (VF) y VOSTFR desde Coflix.",
+      "version": "2.0.2",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/coflix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://coflix.wiki/images/favicon-coflix.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "french-anime",
+      "name": "French-Anime",
+      "description": "Anime en francés (VF) y VOSTFR desde French-Anime.",
+      "version": "0.1.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/french-anime.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://www.french-anime.fr/fav/favicon-32x32.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "dulourd",
+      "name": "DuLourd",
+      "description": "Series, anime y caricaturas en francés (VF) y VOSTFR desde DuLourd.",
+      "version": "1.0.12",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/dulourd.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://www.dulourd.hair/templates/dulourd2/icon/favicon.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "flemmix",
+      "name": "Flemmix",
+      "description": "Películas y series en francés (VF) y VOSTFR desde Flemmix.",
+      "version": "1.0.11",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/flemmix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://flemmix.me/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "french-manga",
+      "name": "French-Manga",
+      "description": "Anime en francés (VF) y VOSTFR desde French-Manga.",
+      "version": "1.0.13",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/french-manga.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://w16.french-manga.net/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "voiranime-homes",
+      "name": "VoirAnime.homes",
+      "description": "Anime en francés (VF) y VOSTFR desde VoirAnime.homes.",
+      "version": "0.1.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/voiranime-homes.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://voiranime.homes/img/icon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "frenchstream",
+      "name": "Frenchstream",
+      "description": "Películas, series y anime en francés (VF) y VOSTFR desde Frenchstream.",
+      "version": "2.0.20",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/frenchstream.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": [
+        "mp4",
+        "mkv",
+        "m3u8"
+      ],
+      "logo": "https://french-stream.one/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ],
+      "supportsExternalPlayer": true
+    },
+    {
+      "id": "mugiwarastream",
+      "name": "Mugiwara-no-Streaming",
+      "description": "Anime en francés (VF) y VOSTFR desde Mugiwara-no-Streaming.",
+      "version": "1.0.18",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/mugiwarastream.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv",
+        "m3u8"
+      ],
+      "logo": "https://raw.githubusercontent.com/NOUSSS/mugiwara-no-streaming-images/main/Logo.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "sekai",
+      "name": "Sekai",
+      "description": "Anime popular en VOSTFR (subtítulos en francés) desde Sekai, con streams directos.",
+      "version": "1.0.24",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/sekai.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "logo": "https://sekai.one/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ],
+      "disabledPlatforms": [
+        "tv"
+      ]
+    },
+    {
+      "id": "voiranime",
+      "name": "VoirAnime",
+      "description": "Anime en francés (VF) y VOSTFR desde VoirAnime, uno de los catálogos franceses más grandes.",
+      "version": "1.2.23",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/voiranime.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv",
+        "m3u8"
+      ],
+      "logo": "https://lh3.googleusercontent.com/728eE_dzDC7HWN9Cs2eGkQg4Vlk1CqCJj3T8aAQs50srttRUl6pVmmD0O4t1Zxn4fdiVpPzcoPAzNS2EuUre29Dulw=s60",
+      "contentLanguage": [
+        "fr"
+      ],
+      "disabledPlatforms": [
+        "tv"
+      ]
+    },
+    {
+      "id": "voiranime-one",
+      "name": "VoirAnime.one",
+      "description": "Anime en francés (VF) y VOSTFR desde VoirAnime.one.",
+      "version": "0.1.0",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/voiranime-one.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://voiranime.one/assets/voiranime-logo.svg",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "voiranime-be",
+      "name": "VoiranimeBE",
+      "description": "Anime en simulcast en VOSTFR (subtítulos en francés) desde VoiranimeBE.",
+      "version": "0.1.0",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/voiranime-be.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://voiranime.be/wp-content/uploads/2024/01/favicon.png",
+      "contentLanguage": [
+        "fr"
+      ],
+      "categories": [
+        "anime",
+        "tv"
+      ]
+    },
+    {
+      "id": "jetanimes",
+      "name": "Jetanimes",
+      "description": "Anime en VOSTFR (subtítulos en francés) desde Jetanimes.",
+      "version": "0.1.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/jetanimes.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://on.jetanimes.com/wp-content/uploads/2023/11/cropped-favicon-32x32-1.png",
+      "contentLanguage": [
+        "fr"
+      ],
+      "categories": [
+        "anime",
+        "tv"
+      ]
+    },
+    {
+      "id": "senanimes",
+      "name": "SenAnimes",
+      "description": "Anime en francés (VF) y VOSTFR desde SenAnimes.",
+      "version": "0.1.0",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/senanimes.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://senanimes.com/icon.svg",
+      "contentLanguage": [
+        "fr"
+      ],
+      "categories": [
+        "anime",
+        "tv",
+        "movies"
+      ]
+    },
+    {
+      "id": "adkami",
+      "name": "ADKami",
+      "description": "Anime en francés (VF) y VOSTFR desde ADKami.",
+      "version": "0.1.0",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/adkami.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://www.adkami.com/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ],
+      "categories": [
+        "anime",
+        "tv",
+        "movies"
+      ]
+    },
+    {
+      "id": "animesite",
+      "name": "AnimeSite",
+      "description": "Anime en francés (VF) y VOSTFR desde AnimeSite.",
+      "version": "0.1.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animesite.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://animesite.fr/anime-site-icon.ico",
+      "contentLanguage": [
+        "fr"
+      ],
+      "categories": [
+        "anime",
+        "tv",
+        "movies"
+      ]
+    },
+    {
+      "id": "voiranime-rip",
+      "name": "VoirAnime.rip",
+      "description": "Anime en francés (VF) y VOSTFR desde VoirAnime.rip.",
+      "version": "1.0.14",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/voiranime-rip.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://voiranime.rip/img/icon.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "vostfree",
+      "name": "Vostfree",
+      "description": "Anime en francés (VF) y VOSTFR desde Vostfree.",
+      "version": "1.1.54",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/vostfree.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "mkv"
+      ],
+      "logo": "https://vostfree.ws/templates/Animix/images/logo.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "papadustream",
+      "name": "Papadustream",
+      "description": "Películas y series en francés (VF) por HLS desde Papadustream.",
+      "version": "1.0.6",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/papadustream.js",
+      "enabled": true,
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://raw.githubusercontent.com/Gowaru/gowaru-nuvio-providers/main/assets/papadustream.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "wookafr",
+      "name": "Wookafr",
+      "description": "Películas y series en francés (VF) y VOSTFR desde Wookafr.",
+      "version": "1.0.12",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/wookafr.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://wookafr.center/wp-content/uploads/2023/08/icon-192x192-1.webp",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "streamzo",
+      "name": "StreamZo",
+      "description": "Películas y series en francés (VF) y VOSTFR desde StreamZo.",
+      "version": "1.0.5",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/streamzo.js",
+      "enabled": true,
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://streamzo.fr/static/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "waveanime",
+      "name": "WaveAnime",
+      "description": "Anime en francés (VF) y VOSTFR desde WaveAnime (formato DASH, funciona en Android).",
+      "version": "0.0.7",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/waveanime.js",
+      "enabled": true,
+      "formats": [
+        "dash"
+      ],
+      "logo": "https://waveanime.fr/assets/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ],
+      "limited": true
+    },
+    {
+      "id": "neko-sama",
+      "name": "Neko-Sama",
+      "description": "Anime en francés (VF) y VOSTFR desde Neko-Sama.",
+      "version": "0.0.2",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/neko-sama.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://animes-sama.su/wp-content/uploads/2026/04/Anime-sama-logo-icon.webp",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "franime",
+      "name": "Franime",
+      "description": "Anime en francés (VF) y VOSTFR desde Franime.",
+      "version": "0.0.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/franime.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://franime.fr/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "fluneo",
+      "name": "Fluneo",
+      "description": "Anime en francés (VF) y VOSTFR desde Fluneo.",
+      "version": "0.0.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/fluneo.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://myfluneo.eu/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "voirdrama",
+      "name": "Voirdrama",
+      "description": "Doramas en francés (VF) y VOSTFR desde Voirdrama.",
+      "version": "0.0.1",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/voirdrama.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://voirdrama.to/favicon.ico",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "fullanime",
+      "name": "FullAnime",
+      "description": "Anime en VOSTFR (subtítulos en francés) y VF desde FullAnime.",
+      "version": "0.0.3",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/fullanime.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://www.fullanime.fr/assets/img/MeteorLogo.png",
+      "contentLanguage": [
+        "fr"
+      ]
+    },
+    {
+      "id": "animevost-fr",
+      "name": "AnimeVOST.fr",
+      "description": "Anime en VOSTFR (subtítulos en francés) desde AnimeVOST.fr.",
+      "version": "0.1.0",
+      "author": "Gowaru",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/animevost-fr.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://animevost.fr/favicon.ico",
+      "contentLanguage": [
+        "fr"
       ]
     }
   ]
