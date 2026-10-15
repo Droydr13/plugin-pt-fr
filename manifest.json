@@ -1,6 +1,6 @@
 {
   "name": "All-in-One FR-PT",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "scrapers": [
     {
       "id": "anizone",
@@ -1057,6 +1057,276 @@
       "logo": "https://animevost.fr/favicon.ico",
       "contentLanguage": [
         "fr"
+      ]
+    },
+    {
+      "id": "netcine",
+      "name": "NetCine",
+      "description": "Películas, series y anime en portugués de Brasil (doblado y subtitulado) desde NetCine.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/netcine.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://cdn.bcdn.zip/wp-content/uploads/2017/04/nc-header-responsive.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "megaflix",
+      "name": "MegaFlix",
+      "description": "Películas y series dobladas al portugués de Brasil desde MegaFlix.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/megaflix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.imgur.com/Y7gXItF.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "pobreflix",
+      "name": "PobreFlix",
+      "description": "Películas, series y anime en portugués de Brasil (doblado y subtitulado) desde PobreFlix.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/pobreflix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://www.pobreflixtv.club/uploads/set_resources_14/a5bd102ac3b4e1362ac25aed38707f87_favicon.ico",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "topfilmes",
+      "name": "TopFilmes",
+      "description": "Películas dobladas al portugués de Brasil desde TopFilmes.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/topfilmes.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://www.topfilmes.biz/assets/theme/red/favicon/favicon-128.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "overflix",
+      "name": "OverFlix",
+      "description": "Películas y series dobladas al portugués de Brasil desde OverFlix.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/overflix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://overflix.me/assets/img/android-chrome-192x192.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "ultracine",
+      "name": "UltraCine",
+      "description": "Películas y series dobladas al portugués de Brasil desde UltraCine.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/ultracine.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://ultracine.org/wp-content/uploads/2024/07/cropped-favicon-300x300.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "animescloud",
+      "name": "AnimesCloud",
+      "description": "Anime en portugués de Brasil (doblado y subtitulado) desde AnimesCloud.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animescloud.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://i.imgur.com/tYNiHZN.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "animesdigital",
+      "name": "AnimesDigital",
+      "description": "Anime y caricaturas en portugués de Brasil (doblado y subtitulado) desde AnimesDigital.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/animesdigital.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://animesdigital.org/wp-content/uploads/2025/03/cropped-logo-e1740827992823-192x192.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "donghuanosekai",
+      "name": "Donghua No Sekai",
+      "description": "Donghua (anime chino) con subtítulos en portugués desde Donghua No Sekai.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/donghuanosekai.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://donghuanosekai.com/wp-content/uploads/2020/09/cropped-icon_dnsk.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "doramasonline",
+      "name": "Doramas Online",
+      "description": "Doramas con subtítulos en portugués desde Doramas Online.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/doramasonline.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://doramasonline.co/wp-content/uploads/2025/07/cropped-doramas2-180x180.png",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "fshd",
+      "name": "FSHD",
+      "description": "Series dobladas al portugués de Brasil desde la API de FSHD (servidor Fsplay).",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/fshd.js",
+      "enabled": true,
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://fshd.link/favicon.ico",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "megaembed",
+      "name": "MegaEmbed",
+      "description": "Películas y series en portugués de Brasil desde la API de MegaEmbed.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/megaembed.js",
+      "enabled": true,
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "logo": "https://megaembed.com/favicon.ico",
+      "contentLanguage": [
+        "pt"
+      ]
+    },
+    {
+      "id": "redeflix",
+      "name": "RedeFlix",
+      "description": "Películas y series en portugués de Brasil (doblado y subtitulado) desde la API de RedeFlix.",
+      "version": "1.0.0",
+      "author": "saimuelbr",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/redeflix.js",
+      "enabled": true,
+      "formats": [
+        "mp4",
+        "m3u8"
+      ],
+      "logo": "https://redeflixapi.store/favicon.ico",
+      "contentLanguage": [
+        "pt"
       ]
     }
   ]
